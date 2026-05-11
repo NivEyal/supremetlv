@@ -1,0 +1,360 @@
+export const properties = [
+  {
+    id: 1,
+    title: "The Glass Pavilion",
+    address: "42 Sunset Ridge, Beverly Hills, CA 90210",
+    price: 12500000,
+    type: "Villa",
+    status: "For Sale",
+    beds: 6,
+    baths: 7,
+    sqft: 8400,
+    garage: 3,
+    year: 2021,
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=1200&q=80",
+    ],
+    featured: true,
+    tag: "Featured",
+    description: "A masterpiece of modern architecture nestled in the hills of Beverly Hills. Floor-to-ceiling glass walls offer panoramic views of the city, while the infinity pool seems to merge with the horizon.",
+    amenities: ["Infinity Pool", "Home Theater", "Wine Cellar", "Smart Home", "Gym", "Guest House"],
+    agent: { name: "Sophia Hartwell", phone: "+1 310 555 0192", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" },
+    neighborhood: "Beverly Hills",
+    lat: 34.0736,
+    lng: -118.4004
+  },
+  {
+    id: 2,
+    title: "Oceanfront Penthouse",
+    address: "1 Malibu Colony Rd, Malibu, CA 90265",
+    price: 8900000,
+    type: "Penthouse",
+    status: "For Sale",
+    beds: 4,
+    baths: 5,
+    sqft: 4200,
+    garage: 2,
+    year: 2020,
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80",
+    ],
+    featured: true,
+    tag: "New",
+    description: "Wake up to the sound of waves. This spectacular penthouse sits directly on Malibu's most coveted stretch of coastline with a private beach access and breathtaking Pacific views.",
+    amenities: ["Private Beach", "Rooftop Terrace", "Chef's Kitchen", "Concierge", "Spa", "Private Dock"],
+    agent: { name: "Marcus Vega", phone: "+1 310 555 0188", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" },
+    neighborhood: "Malibu",
+    lat: 34.0259,
+    lng: -118.7798
+  },
+  {
+    id: 3,
+    title: "Highland Estate",
+    address: "8200 Mulholland Dr, Los Angeles, CA 90046",
+    price: 5750000,
+    type: "Estate",
+    status: "For Sale",
+    beds: 5,
+    baths: 6,
+    sqft: 6100,
+    garage: 4,
+    year: 2019,
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
+    ],
+    featured: true,
+    tag: "Exclusive",
+    description: "Perched atop Mulholland Drive with sweeping views of both the city and the San Fernando Valley. A magnificent California estate combining indoor-outdoor living at its finest.",
+    amenities: ["Tennis Court", "Pool & Spa", "Outdoor Kitchen", "Fire Pit", "Garden", "Security"],
+    agent: { name: "Isabella Chen", phone: "+1 213 555 0177", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" },
+    neighborhood: "Hollywood Hills",
+    lat: 34.1184,
+    lng: -118.3695
+  },
+  {
+    id: 4,
+    title: "Modern Downtown Loft",
+    address: "350 S Grand Ave, Los Angeles, CA 90071",
+    price: 2100000,
+    type: "Loft",
+    status: "For Sale",
+    beds: 2,
+    baths: 2,
+    sqft: 1850,
+    garage: 1,
+    year: 2022,
+    image: "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1600047509358-9dc75507daeb?w=1200&q=80",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80",
+    ],
+    featured: false,
+    tag: "New",
+    description: "Industrial-chic loft in the heart of downtown LA. Soaring ceilings, exposed concrete, and floor-to-ceiling windows with stunning city skyline views.",
+    amenities: ["Rooftop Pool", "Concierge", "Gym", "Dog Park", "Co-working Space"],
+    agent: { name: "James Foster", phone: "+1 213 555 0165", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" },
+    neighborhood: "Downtown LA",
+    lat: 34.0522,
+    lng: -118.2437
+  },
+  {
+    id: 5,
+    title: "Bel Air Sanctuary",
+    address: "1050 Bel Air Rd, Los Angeles, CA 90077",
+    price: 18500000,
+    type: "Mansion",
+    status: "For Sale",
+    beds: 8,
+    baths: 10,
+    sqft: 12000,
+    garage: 6,
+    year: 2018,
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80",
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=1200&q=80",
+    ],
+    featured: true,
+    tag: "Luxury",
+    description: "An unparalleled Bel Air masterpiece. Hidden behind private gates, this architectural marvel offers unrivaled luxury and privacy for the most discerning buyers.",
+    amenities: ["Ballroom", "Screening Room", "Basketball Court", "Staff Quarters", "Car Gallery", "Helipad"],
+    agent: { name: "Sophia Hartwell", phone: "+1 310 555 0192", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" },
+    neighborhood: "Bel Air",
+    lat: 34.0895,
+    lng: -118.4531
+  },
+  {
+    id: 6,
+    title: "Venice Beach Retreat",
+    address: "23 Windward Ave, Venice, CA 90291",
+    price: 3200000,
+    type: "House",
+    status: "For Rent",
+    beds: 3,
+    baths: 3,
+    sqft: 2400,
+    garage: 1,
+    year: 2020,
+    image: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1200&q=80",
+    ],
+    featured: false,
+    tag: "For Rent",
+    description: "Steps from the famous Venice Beach boardwalk, this stunning beach house blends bohemian charm with modern luxury. Perfect indoor-outdoor California living.",
+    amenities: ["Beach Access", "Surf Storage", "Outdoor Shower", "Rooftop Deck", "Fireplace"],
+    agent: { name: "Marcus Vega", phone: "+1 310 555 0188", avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" },
+    neighborhood: "Venice",
+    lat: 33.9850,
+    lng: -118.4695
+  },
+  {
+    id: 7,
+    title: "Silver Lake Craftsman",
+    address: "2847 Reservoir St, Silver Lake, CA 90039",
+    price: 1850000,
+    type: "House",
+    status: "For Sale",
+    beds: 3,
+    baths: 2,
+    sqft: 1700,
+    garage: 1,
+    year: 1928,
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
+    ],
+    featured: false,
+    tag: "Classic",
+    description: "A beautifully restored 1920s craftsman bungalow in the heart of Silver Lake. Original details preserved with all modern amenities, overlooking the Silver Lake Reservoir.",
+    amenities: ["Original Hardwood", "Updated Kitchen", "Herb Garden", "Front Porch", "Bonus Room"],
+    agent: { name: "Isabella Chen", phone: "+1 213 555 0177", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" },
+    neighborhood: "Silver Lake",
+    lat: 34.0868,
+    lng: -118.2705
+  },
+  {
+    id: 8,
+    title: "Westwood Contemporary",
+    address: "501 Hilgard Ave, Westwood, CA 90024",
+    price: 4400000,
+    type: "House",
+    status: "For Sale",
+    beds: 4,
+    baths: 4,
+    sqft: 3600,
+    garage: 2,
+    year: 2017,
+    image: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1200&q=80",
+    ],
+    featured: false,
+    tag: "New",
+    description: "Contemporary architecture meets California warmth. This Westwood gem features an open floor plan, gourmet kitchen, and a serene backyard perfect for entertaining.",
+    amenities: ["Pool", "Outdoor Kitchen", "Smart Home", "Walk-in Closets", "Solar Panels"],
+    agent: { name: "James Foster", phone: "+1 213 555 0165", avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" },
+    neighborhood: "Westwood",
+    lat: 34.0635,
+    lng: -118.4454
+  }
+];
+
+export const neighborhoods = [
+  {
+    id: 1,
+    name: "Beverly Hills",
+    properties: 42,
+    avgPrice: 8500000,
+    image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=80",
+    description: "Iconic luxury living with world-class shopping and dining",
+    tag: "Ultra Luxury"
+  },
+  {
+    id: 2,
+    name: "Malibu",
+    properties: 28,
+    avgPrice: 6200000,
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
+    description: "Pristine beaches and laid-back coastal luxury",
+    tag: "Coastal"
+  },
+  {
+    id: 3,
+    name: "Hollywood Hills",
+    properties: 65,
+    avgPrice: 3800000,
+    image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600&q=80",
+    description: "Dramatic hillside homes with panoramic city views",
+    tag: "Scenic Views"
+  },
+  {
+    id: 4,
+    name: "Downtown LA",
+    properties: 112,
+    avgPrice: 1200000,
+    image: "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80",
+    description: "Urban living in the heart of the city",
+    tag: "Urban"
+  },
+  {
+    id: 5,
+    name: "Venice",
+    properties: 38,
+    avgPrice: 2900000,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    description: "Creative and eclectic beach community",
+    tag: "Beach"
+  },
+  {
+    id: 6,
+    name: "Bel Air",
+    properties: 19,
+    avgPrice: 15000000,
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80",
+    description: "Exclusive gated estates for the ultra-elite",
+    tag: "Elite"
+  }
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Alexandra & David Chen",
+    text: "LuxeEstate found us our dream home in Beverly Hills in just 3 weeks. The team's market knowledge and personal attention were extraordinary.",
+    role: "Purchased $9.2M Property",
+    avatar: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=100&q=80",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Michael Torres",
+    text: "From Malibu to Downtown, they understood exactly what I needed. Sold my property 12% above asking price in under 10 days.",
+    role: "Sold $4.8M Property",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Priya & Sam Patel",
+    text: "The most professional real estate experience we've ever had. They negotiated a stunning deal on our Hollywood Hills home.",
+    role: "Purchased $5.1M Property",
+    avatar: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=100&q=80",
+    rating: 5
+  },
+  {
+    id: 4,
+    name: "Emma Richardson",
+    text: "Relocation from London to LA was seamless. Their concierge service handled everything—I never felt overwhelmed.",
+    role: "Relocated & Purchased",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80",
+    rating: 5
+  }
+];
+
+export const stats = [
+  { label: "Properties Sold", value: "2,400+", icon: "Home" },
+  { label: "Happy Clients", value: "1,800+", icon: "Users" },
+  { label: "Years Experience", value: "18", icon: "Award" },
+  { label: "Total Value Sold", value: "$8.2B+", icon: "TrendingUp" }
+];
+
+export const agents = [
+  {
+    id: 1,
+    name: "Sophia Hartwell",
+    title: "Senior Luxury Specialist",
+    phone: "+1 310 555 0192",
+    email: "sophia@luxeestate.com",
+    bio: "15+ years specializing in Bel Air and Beverly Hills. Record $48M sale in 2023.",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80",
+    sales: 142,
+    rating: 4.9,
+    specialties: ["Beverly Hills", "Bel Air", "Holmby Hills"]
+  },
+  {
+    id: 2,
+    name: "Marcus Vega",
+    title: "Coastal Properties Expert",
+    phone: "+1 310 555 0188",
+    email: "marcus@luxeestate.com",
+    bio: "Malibu and Coastal LA specialist for 12 years. Expert in beachfront acquisitions.",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80",
+    sales: 118,
+    rating: 4.8,
+    specialties: ["Malibu", "Pacific Palisades", "Santa Monica"]
+  },
+  {
+    id: 3,
+    name: "Isabella Chen",
+    title: "Investment Properties Advisor",
+    phone: "+1 213 555 0177",
+    email: "isabella@luxeestate.com",
+    bio: "Focuses on high-yield investment properties and luxury residential across LA.",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80",
+    sales: 96,
+    rating: 4.9,
+    specialties: ["Hollywood Hills", "Silver Lake", "Los Feliz"]
+  },
+  {
+    id: 4,
+    name: "James Foster",
+    title: "Urban Lifestyle Specialist",
+    phone: "+1 213 555 0165",
+    email: "james@luxeestate.com",
+    bio: "Downtown LA and West Side specialist. Expert in modern condos and lofts.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80",
+    sales: 84,
+    rating: 4.7,
+    specialties: ["Downtown LA", "Westwood", "Venice"]
+  }
+];
