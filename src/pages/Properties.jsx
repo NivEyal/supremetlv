@@ -88,7 +88,7 @@ export default function Properties() {
     if (sort === SORT[2]) return [...list].sort((a, b) => b.year - a.year);
     if (sort === SORT[3]) return [...list].sort((a, b) => b.sqm - a.sqm);
     return list;
-  }, [search, city, type, rooms, sort, priceMin, priceMax, seaView, pool, parking, lang]);
+  }, [allProperties, search, city, type, rooms, sort, priceMin, priceMax, seaView, pool, parking, lang]);
 
   const clearFilters = () => {
     setSearch(''); setCity(CITIES[0]); setType(TYPES[0]); setRooms('');
